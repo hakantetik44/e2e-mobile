@@ -34,11 +34,7 @@ public class Driver {
               //caps.setCapability(MobileCapabilityType.NO_RESET,true);
              caps.setCapability("chromedriverExecutable","C:\\Users\\maruf\\IdeaProjects\\e2e-mobile\\driver\\chromedriver.exe");
              caps.setCapability(MobileCapabilityType.BROWSER_NAME,"chrome");
-
-
-
-
-
+             
             if (ConfigReader.getProperty("platformName").equals("Android")) {
                 appiumDriver = new AndroidDriver<>(appiumServerURL,caps);
                 appiumDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

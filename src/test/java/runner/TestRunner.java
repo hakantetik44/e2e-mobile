@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
                 "utils.formatter.PrettyReports:target/cucumber-pretty-reports"},
         features = "src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@now",
+        tags = "",
         dryRun = false
 )
 public class TestRunner {
